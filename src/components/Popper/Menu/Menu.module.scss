@@ -1,0 +1,28 @@
+@use '../../../styles/' as *;
+
+//Menu wrapper
+.menu-list {
+
+    .menu-item {
+        margin-left: 0 !important;
+    }
+}
+
+.menu-popper {
+    padding-bottom: 8px;
+}
+
+//Menu items
+
+.menu-item {
+    max-height: inherit;
+    top: 100%;
+    width: 100%;
+    position: relative;
+    color: #292929;
+    background-color: #292929;
+
+    &:hover {
+        background-color: #777777cc;
+    }
+}
