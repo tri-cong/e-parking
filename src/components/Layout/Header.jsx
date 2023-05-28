@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Menu from '../Popper/Menu';
+import Parco from '../../images/Parco.jpg'
 
 const MENU_ITEMS_INTRODUCE = [
     {
@@ -50,7 +51,7 @@ function Header(props) {
         <Navigation>
             <div className="navContainer">
                 <div className="logo">
-                    <h1>E-Parking</h1>
+                    <img src={Parco} alt=""/>
                 </div>
                 <div className="menu-item-title">
                     <Menu items={MENU_ITEMS_INTRODUCE}>
@@ -98,11 +99,14 @@ const Navigation = styled.div`
         }
 
         .logo {
-            width: 240px;
-            cursor: poiter;
-            padding-left: 3%;
-            color: #08C5C4;
-            font-size: 18px;
+            
+            img {
+                padding-left: 20px;
+                width: 120px;
+                cursor: pointer;
+            }
+
+
         }
 
         .menu-item-title {
